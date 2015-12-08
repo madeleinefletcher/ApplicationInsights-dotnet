@@ -96,17 +96,6 @@ namespace Microsoft.ApplicationInsights.Channel
         }
 
         /// <summary>
-        /// Gets or sets the maximum telemetry batching interval. Once the interval expires, <see cref="InMemoryChannel"/> 
-        /// serializes the accumulated telemetry items for transmission.
-        /// </summary>
-        [Obsolete("This value is now obsolete and will be removed in next release, use SendingInterval instead.")]
-        public double DataUploadIntervalInSeconds
-        {
-            get { return this.transmitter.SendingInterval.TotalSeconds; }
-            set { this.transmitter.SendingInterval = TimeSpan.FromSeconds(value); }
-        }
-
-        /// <summary>
         /// Gets or sets the maximum number of telemetry items will accumulate in a memory before 
         /// the <see cref="InMemoryChannel"/> serializing them for transmission to Application Insights.
         /// </summary>

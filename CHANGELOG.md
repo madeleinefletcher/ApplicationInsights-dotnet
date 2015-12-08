@@ -2,6 +2,9 @@
 
 This changelog will be used to generate documentation on [release notes page](http://azure.microsoft.com/en-us/documentation/articles/app-insights-release-notes-dotnet/).
 
+## Version 2.0.0-beta4
+- Remove obsolete properties `DependencyTelemetry.Async`, `DependencyTelemetry.Count`, `UserContext.AcquisitonDate`, `DeviceContext.RoleName`, `DeviceContext.RoleInstance`, `InMemoryChannel.DataUploadIntervalInSeconds`.
+
 ## Version 2.0.0-beta3
 - Adaptive sampling turned on by default in server telemetry channel. Details can be found in [#80](https://github.com/Microsoft/ApplicationInsights-dotnet/issues/80).
 - Fixed signature of ```UseSampling``` to allow chaining with other calls to ```Use``` of telemetry processors.
