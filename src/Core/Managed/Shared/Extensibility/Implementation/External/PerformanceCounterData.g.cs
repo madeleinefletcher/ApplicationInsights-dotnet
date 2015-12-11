@@ -27,6 +27,7 @@ namespace Microsoft.ApplicationInsights.Extensibility.Implementation.External
     
     [System.CodeDom.Compiler.GeneratedCode("gbc", "3.02")]
     internal partial class PerformanceCounterData
+        
     {
         
         
